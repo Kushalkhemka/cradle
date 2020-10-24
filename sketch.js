@@ -1,6 +1,7 @@
 const Engine = Matter.Engine;
 const World= Matter.World;
 const Bodies = Matter.Bodies;
+const Body=Matter.Body;
 const Constraint=Matter.Constraint;
 
 var bob1,bob2,bob3,bob4,bob5,bob6;
@@ -24,6 +25,8 @@ function setup() {
 
 function draw() {
   background("lightgrey");  
+  
+  Engine.update(engine);
  
   toproof.display();
   bob1.display();
